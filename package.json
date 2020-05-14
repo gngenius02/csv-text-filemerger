@@ -1,0 +1,31 @@
+{
+  "name": "readfiles-eventstreams",
+  "version": "1.0.0",
+  "description": "A nodejs program that uses event streams to read even very large files into memory quickily.",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc -b",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "keywords": [
+    "readfiles",
+    "event-stream",
+    "fast parse",
+    "txt",
+    "csv"
+  ],
+  "author": "gngenius02@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/event-stream": "^3.3.34",
+    "@types/node": "^14.0.1",
+    "typescript": "^3.9.2"
+  },
+  "dependencies": {
+    "event-stream": "^4.0.1"
+  },
+  "bin": {
+    "readcsv": "./dist/index.js"
+  }
+}
