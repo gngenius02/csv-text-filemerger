@@ -3,7 +3,7 @@
 import es from "event-stream";
 import fs from "fs";
 
-let [, , ...path] = process.argv;
+let path = process.argv.slice(2);
 
 console.time("readfileandsave");
 
